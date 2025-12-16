@@ -418,63 +418,29 @@ main {
 
 .why-choose-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
     align-items: center;
     margin-top: 60px;
 }
 
+.why-choose-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-color-light);
+    margin-bottom: 30px;
+}
+
 .why-choose-cards {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-
-.why-choose-image {
-    position: relative;
-}
-
-.clinic-image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(26, 54, 93, 0.15);
-}
-
-.image-overlay {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    display: flex;
-    gap: 20px;
-}
-
-.stats-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.stats-card h4 {
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 5px;
-}
-
-.stats-card p {
-    font-size: 0.9rem;
-    color: var(--text-color);
-    margin: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .why-choose-card {
     background: white;
-    border-radius: 20px;
-    padding: 40px 30px;
+    border-radius: 15px;
+    padding: 30px 25px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(26, 54, 93, 0.1);
     transition: all 0.4s ease;
@@ -488,14 +454,15 @@ main {
 }
 
 .why-choose-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 25px;
-    background: var(--accent-color);
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
+    background: var(--gradient-accent);
     color: white;
     transition: all 0.3s ease;
 }
@@ -506,67 +473,41 @@ main {
 }
 
 .why-choose-card:hover .why-choose-icon {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(56, 161, 105, 0.3);
+    transform: scale(1.1) rotate(10deg);
 }
 
-.why-choose-card h3 {
-    margin-bottom: 20px;
+.why-choose-card h4 {
+    margin-bottom: 15px;
     color: var(--secondary-color);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .why-choose-card p {
     color: var(--text-color-light);
-    line-height: 1.7;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+    .why-choose-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .why-choose-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
-    .why-choose-content {
+    .why-choose-cards {
         grid-template-columns: 1fr;
-        gap: 50px;
-    }
-    
-    .clinic-image {
-        height: 300px;
-    }
-    
-    .image-overlay {
-        bottom: 20px;
-        left: 20px;
-        flex-direction: column;
-        gap: 15px;
     }
 }
 
 /* -------------------
    7. About Section
    ------------------- */
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.about-image img {
-    border-radius: 10px;
-    box-shadow: 0 10px 30px var(--shadow-color);
-}
-
-.value-item {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.value-item-icon {
-    width: 24px;
-    height: 24px;
-    color: var(--accent-color-darker);
-    margin-right: 15px;
-    flex-shrink: 0;
-}
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -971,10 +912,45 @@ textarea.form-control {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .features-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .features-image {
+        order: -1;
+    }
+    
+    .features-image img {
+        max-height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .feature-item {
+        justify-content: center;
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto 25px;
+    }
+}
+
 .feature-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .feature-icon {
