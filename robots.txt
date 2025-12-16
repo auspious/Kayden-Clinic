@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kaydenclinic.co.zw/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
