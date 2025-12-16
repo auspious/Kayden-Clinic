@@ -10,20 +10,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
 
+    console.log('Nav toggle element:', navToggle);
+    console.log('Nav menu element:', navMenu);
+
     if (navToggle && navMenu) {
-        navToggle.addEventListener('click', () => {
+        console.log('Both nav elements found, adding event listener');
+        navToggle.addEventListener('click', (e) => {
+            console.log('Hamburger menu clicked');
+            e.preventDefault();
+            e.stopPropagation();
             navMenu.classList.toggle('active');
+            console.log('Menu active class toggled');
             // Simple accessibility improvement
             const isExpanded = navMenu.classList.contains('active');
             navToggle.setAttribute('aria-expanded', isExpanded);
+            console.log('Menu active state:', isExpanded);
         });
+        
+        // Close menu when clicking on nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+        console.log('Found nav links:', navLinks.length);
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                console.log('Nav link clicked, closing menu');
+                navMenu.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    } else {
+        console.log('Nav elements not found - navToggle:', navToggle, 'navMenu:', navMenu);
     }
 
     // --- 2. Active Navigation Link Styling ---
-    const navLinks = document.querySelectorAll('.nav-link');
+    const allNavLinks = document.querySelectorAll('.nav-link');
     const currentPath = window.location.pathname.split('/').pop();
 
-    navLinks.forEach(link => {
+    allNavLinks.forEach(link => {
         const linkPath = link.getAttribute('href').split('/').pop();
         // Handle index.html being the root path
         if (currentPath === '' && linkPath === 'index.html') {
@@ -75,19 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
             el.style.opacity = '1';
             el.style.transform = 'translateY(0) scale(1)';
         }, index * 200);
-    });
-
-    // Enhanced card hover effects
-    const serviceCards = document.querySelectorAll('.service-card, .pharmacy-card');
-    serviceCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-15px) scale(1.02)';
-            this.style.boxShadow = '0 25px 50px rgba(26, 54, 93, 0.2)';
-        });
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-            this.style.boxShadow = '0 8px 25px rgba(26, 54, 93, 0.08)';
-        });
     });
 
     // Smooth scroll for navigation

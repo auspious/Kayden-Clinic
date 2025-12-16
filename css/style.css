@@ -174,6 +174,7 @@ h3 { font-size: 1.5rem; }
     background: none;
     border: none;
     padding: 8px;
+    z-index: 1001;
 }
 
 main {
@@ -1049,15 +1050,17 @@ textarea.form-control {
         flex-direction: column;
         justify-content: center;
         gap: 40px;
-        transition: right 0.5s ease-in-out;
+        transition: right 0.3s ease-in-out;
+        z-index: 999;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
     }
 
     .nav-menu.active {
-        right: 0;
+        right: 0 !important;
     }
 
     .nav-toggle {
-        display: block;
+        display: block !important;
     }
 
     .hero { padding: 80px 0; }
