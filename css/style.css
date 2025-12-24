@@ -1,16 +1,9 @@
-/*
-* Kayden Clinic - Global Stylesheet
-* Author: Gemini
-* Version: 1.0
-*/
-
-/* -------------------
-   1. Global Variables & Reset
-   ------------------- */
 :root {
     --primary-color: #ffffff;
-    --secondary-color: #1a365d; /* Deep Navy */
-    --accent-color: #38a169; /* Professional Green */
+    --secondary-color: #1a365d;
+    /* Deep Navy */
+    --accent-color: #38a169;
+    /* Professional Green */
     --accent-color-darker: #2f855a;
     --accent-light: #68d391;
     --text-color: #2d3748;
@@ -74,7 +67,12 @@ img {
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-secondary);
     color: var(--secondary-color);
     font-weight: 700;
@@ -82,9 +80,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
-h1 { font-size: 2.8rem; }
-h2 { font-size: 2.2rem; }
-h3 { font-size: 1.5rem; }
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
 
 .container {
     width: 90%;
@@ -202,7 +208,8 @@ main {
 }
 
 .btn-primary:hover {
-    background-color: #003366; /* Darker Navy */
+    background-color: #003366;
+    /* Darker Navy */
     color: var(--primary-color);
 }
 
@@ -234,11 +241,12 @@ main {
     position: relative;
     padding: 120px 0;
     text-align: center;
-    background-image: url('https://img.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg?w=1380&t=st=1702021245~exp=1702021845~hmac=6c3f9c2d6c7b7b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b');
+    background-image: url('../images/Kayden.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: var(--primary-color);
+    opacity: 1;
 }
 
 .hero::before {
@@ -248,8 +256,17 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 31, 63, 0.7); /* Semi-transparent navy overlay */
+    background-color: rgba(0, 31, 63, 0.7);
+    /* Semi-transparent navy overlay */
     z-index: 1;
+}
+
+.hero.pharmacy-hero {
+    background-image: url('../images/pharmacy.jpeg');
+}
+
+.hero.about-hero {
+    background-image: url('../images/Services.jpeg');
 }
 
 .btn-green {
@@ -493,7 +510,7 @@ main {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .why-choose-cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -727,7 +744,8 @@ textarea.form-control {
     margin-bottom: 20px;
 }
 
-.footer-col p, .footer-col a {
+.footer-col p,
+.footer-col a {
     color: #adb5bd;
     margin-bottom: 10px;
 }
@@ -773,6 +791,7 @@ textarea.form-control {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -784,6 +803,7 @@ textarea.form-control {
         opacity: 0;
         transform: scale(0.8);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -804,8 +824,8 @@ textarea.form-control {
    12. Pharmacy Styles
    ------------------- */
 .pharmacy-hero {
-    background: linear-gradient(135deg, rgba(26, 54, 93, 0.9), rgba(44, 82, 130, 0.8)), 
-                url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070') center/cover;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.9), rgba(44, 82, 130, 0.8)),
+        url('/images/Kayden.jpg') center/cover;
 }
 
 .pharmacy-grid {
@@ -918,17 +938,17 @@ textarea.form-control {
         gap: 40px;
         text-align: center;
     }
-    
+
     .features-image {
         order: -1;
     }
-    
+
     .features-image img {
         max-height: 300px;
         width: 100%;
         object-fit: cover;
     }
-    
+
     .feature-item {
         justify-content: center;
         text-align: left;
@@ -993,11 +1013,17 @@ textarea.form-control {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.service-card, .pharmacy-card {
+.service-card,
+.pharmacy-card {
     cursor: pointer;
     user-select: none;
 }
@@ -1006,15 +1032,32 @@ textarea.form-control {
    13. Responsive Design
    ------------------- */
 @media (max-width: 992px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
-    .hero-slogan { font-size: 3rem; }
-    .about-content, .contact-grid { grid-template-columns: 1fr; }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero-slogan {
+        font-size: 3rem;
+    }
+
+    .about-content,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
-    :root { --header-height: 70px; }
-    .section { padding: 60px 0; }
+    :root {
+        --header-height: 70px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
 
     .nav-menu {
         position: fixed;
@@ -1028,7 +1071,7 @@ textarea.form-control {
         gap: 40px;
         transition: right 0.3s ease-in-out;
         z-index: 999;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     }
 
     .nav-menu.active {
@@ -1039,20 +1082,148 @@ textarea.form-control {
         display: block !important;
     }
 
-    .hero { padding: 80px 0; }
-    .hero-slogan { font-size: 2.5rem; }
-    .hero-subtext { font-size: 1.1rem; }
-    .hero-cta-buttons { gap: 15px; }
-    .btn { padding: 12px 24px; }
+    .hero {
+        padding: 80px 0;
+    }
 
-    .contact-grid { gap: 40px; }
-    .contact-map iframe { min-height: 300px; }
+    .hero-slogan {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtext {
+        font-size: 1.1rem;
+    }
+
+    .hero-cta-buttons {
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+    }
+
+    .contact-grid {
+        gap: 40px;
+    }
+
+    .contact-map iframe {
+        min-height: 300px;
+    }
+}
+
+.medical-aids-grid {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.medical-aids-grid p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 @media (max-width: 480px) {
-    body { font-size: 15px; }
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.8rem; }
-    .hero-slogan { font-size: 2.2rem; }
-    .hero-cta-buttons { flex-direction: column; width: 80%; margin: 0 auto; }
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-slogan {
+        font-size: 2.2rem;
+    }
+
+    .hero-cta-buttons {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* -------------------
+   13. Medical Aids Marquee
+   ------------------- */
+.medical-aids-section {
+    background-color: #f9fafb;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.partner-logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    white-space: nowrap;
+    padding: 15px 30px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    color: var(--accent-color-darker);
+}
+
+.partner-logo::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='%2338a169' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - 25px));
+        /* adjust gap offset */
+    }
 }
