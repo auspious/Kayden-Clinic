@@ -1,0 +1,1699 @@
+/* ============================================
+   KAYDEN CLINIC - THE SANCTUARY OF HEALING
+   Ethereal Professionalism Design System
+   ============================================ */
+
+/* ============================================
+   1. HEALING NEUTRALS COLOR PALETTE
+   ============================================ */
+:root {
+    /* Primary Colors - Original Darker Green */
+    --pearl-white: #ffffff;
+    --pearl-white-pure: #ffffff;
+    --primary-green: #38a169;
+    --primary-green-dark: #2f855a;
+    --primary-green-light: #68d391;
+    --soft-sage: #38a169;
+    --sage-muted: #48bb78;
+    --sage-deep: #2f855a;
+    --liquid-gold: #c9a962;
+    --gold-shimmer: #d4b978;
+    --gold-glow: rgba(201, 169, 98, 0.15);
+
+    /* Navy Accent */
+    --navy-deep: #1a365d;
+    --navy-medium: #2c5282;
+
+    /* Atmospheric Tones */
+    --whisper-gray: #e8e6e3;
+    --mist: #f8f9fa;
+    --shadow-silk: rgba(56, 161, 105, 0.08);
+    --ethereal-overlay: rgba(255, 255, 255, 0.92);
+
+    /* Text Hierarchy - Higher Contrast */
+    --text-primary: #1a202c;
+    --text-secondary: #2d3748;
+    --text-whisper: #718096;
+    --text-light: #a0aec0;
+
+    /* Sanctuary Gradients */
+    --gradient-sanctuary: linear-gradient(180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(56, 161, 105, 0.03) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    --gradient-healing: linear-gradient(135deg,
+            rgba(56, 161, 105, 0.1) 0%,
+            rgba(201, 169, 98, 0.05) 100%);
+    --gradient-light-rays: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.9) 0%,
+            rgba(248, 249, 250, 0.95) 100%);
+
+    /* Typography */
+    --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+    --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+
+    /* Spacing - Generous White Space */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+    --space-xxl: 12rem;
+
+    /* Animation Timings */
+    --breathe-duration: 4s;
+    --transition-silk: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-velvet: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    /* Layout */
+    --header-height: 90px;
+    --max-width: 1400px;
+    --content-width: 900px;
+}
+
+/* ============================================
+   2. TYPOGRAPHY - ARCHITECTURAL ELEGANCE
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    scroll-padding-top: var(--header-height);
+}
+
+body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    background-color: var(--pearl-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+}
+
+/* Heading Styles - Architectural Serif */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    color: var(--text-primary);
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 300;
+    margin-bottom: var(--space-md);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: var(--font-sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: var(--space-sm);
+    max-width: 65ch;
+}
+
+.lead-text {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2;
+    color: var(--text-secondary);
+    letter-spacing: 0.03em;
+}
+
+a {
+    color: var(--soft-sage);
+    text-decoration: none;
+    transition: color var(--transition-silk);
+}
+
+a:hover {
+    color: var(--liquid-gold);
+}
+
+/* ============================================
+   3. SANCTUARY LAYOUT SYSTEM
+   ============================================ */
+.sanctuary-container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.content-narrow {
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+.section-sanctuary {
+    padding: var(--space-xxl) 0;
+    position: relative;
+}
+
+.generous-space {
+    padding: var(--space-xl) 0;
+}
+
+/* ============================================
+   4. THE BREATHE ANIMATION
+   ============================================ */
+@keyframes breathe {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.01);
+        opacity: 0.97;
+    }
+}
+
+@keyframes breathe-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 40px rgba(201, 169, 98, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 0 60px rgba(201, 169, 98, 0.2);
+    }
+}
+
+@keyframes float-gentle {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse-soft {
+
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes light-ray {
+    0% {
+        transform: translateX(-100%) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateX(100%) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+.breathe {
+    animation: breathe var(--breathe-duration) ease-in-out infinite;
+}
+
+.breathe-glow {
+    animation: breathe-glow var(--breathe-duration) ease-in-out infinite;
+}
+
+.float-gentle {
+    animation: float-gentle 6s ease-in-out infinite;
+}
+
+/* ============================================
+   5. CINEMATIC HERO - WITH BACKGROUND IMAGE
+   ============================================ */
+.hero-sanctuary {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: url('../images/Kayden.jpeg') center/cover no-repeat;
+    color: var(--pearl-white);
+}
+
+.hero-sanctuary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg,
+            rgba(26, 54, 93, 0.75) 0%,
+            rgba(26, 54, 93, 0.6) 50%,
+            rgba(26, 54, 93, 0.8) 100%);
+    z-index: 1;
+}
+
+/* Animated Light Rays */
+.light-rays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.light-ray {
+    position: absolute;
+    width: 300px;
+    height: 1000px;
+    background: linear-gradient(180deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.4) 20%,
+            rgba(201, 169, 98, 0.1) 50%,
+            rgba(255, 255, 255, 0.4) 80%,
+            transparent 100%);
+    transform: rotate(15deg);
+    animation: light-ray 15s ease-in-out infinite;
+    filter: blur(30px);
+}
+
+.light-ray:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.light-ray:nth-child(2) {
+    left: 30%;
+    animation-delay: 3s;
+    width: 200px;
+}
+
+.light-ray:nth-child(3) {
+    left: 60%;
+    animation-delay: 6s;
+    width: 400px;
+}
+
+.light-ray:nth-child(4) {
+    left: 80%;
+    animation-delay: 9s;
+    width: 250px;
+}
+
+/* Organic Texture Background */
+.organic-texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    z-index: 0;
+}
+
+.hero-content-sanctuary {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    padding: var(--space-xl);
+}
+
+.hero-tagline {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--liquid-gold);
+    margin-bottom: var(--space-lg);
+    animation: breathe var(--breathe-duration) ease-in-out infinite;
+}
+
+.hero-headline {
+    font-family: var(--font-serif);
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--pearl-white);
+    margin-bottom: var(--space-lg);
+    opacity: 0;
+    transform: translateY(40px);
+    animation: revealUp 1.2s ease-out 0.3s forwards;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-headline em {
+    font-style: italic;
+    color: var(--primary-green-light);
+}
+
+.hero-subheadline {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 2;
+    max-width: 600px;
+    margin: 0 auto var(--space-xl);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: revealUp 1s ease-out 0.6s forwards;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes revealUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   6. ETHEREAL HEADER
+   ============================================ */
+.header-sanctuary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    z-index: 1000;
+    transition: all var(--transition-silk);
+}
+
+.header-sanctuary.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling - light on hero, dark when scrolled */
+.header-sanctuary .logo-sanctuary {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--pearl-white);
+    letter-spacing: 0.02em;
+    transition: color var(--transition-silk);
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-sanctuary .logo-sanctuary span {
+    color: var(--primary-green-light);
+}
+
+.header-sanctuary.scrolled .logo-sanctuary {
+    color: var(--text-primary);
+    text-shadow: none;
+}
+
+.header-sanctuary.scrolled .logo-sanctuary span {
+    color: var(--primary-green);
+}
+
+.header-sanctuary .logo-sanctuary:hover {
+    color: var(--primary-green-light);
+}
+
+/* Nav links - light on hero, dark when scrolled */
+.header-sanctuary .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-sanctuary.scrolled .nav-link {
+    color: var(--text-secondary);
+    text-shadow: none;
+}
+
+.header-sanctuary .nav-link:hover,
+.header-sanctuary .nav-link.active {
+    color: var(--pearl-white);
+}
+
+.header-sanctuary.scrolled .nav-link:hover,
+.header-sanctuary.scrolled .nav-link.active {
+    color: var(--text-primary);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+.logo-sanctuary {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--pearl-white);
+    letter-spacing: 0.02em;
+    transition: color var(--transition-silk);
+}
+
+.logo-sanctuary span {
+    color: var(--primary-green-light);
+}
+
+.logo-sanctuary:hover {
+    color: var(--primary-green-light);
+}
+
+.nav-sanctuary {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.nav-sanctuary .nav-link {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    position: relative;
+    padding: var(--space-xs) 0;
+    transition: color var(--transition-silk);
+}
+
+.nav-sanctuary .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: var(--liquid-gold);
+    transition: all var(--transition-silk);
+    transform: translateX(-50%);
+}
+
+.nav-sanctuary .nav-link:hover,
+.nav-sanctuary .nav-link.active {
+    color: var(--text-primary);
+}
+
+.nav-sanctuary .nav-link:hover::after,
+.nav-sanctuary .nav-link.active::after {
+    width: 100%;
+}
+
+/* Mobile Navigation */
+.nav-toggle-sanctuary {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+}
+
+.nav-toggle-sanctuary span {
+    width: 24px;
+    height: 2px;
+    background: var(--pearl-white);
+    transition: all var(--transition-silk);
+}
+
+.header-sanctuary.scrolled .nav-toggle-sanctuary span {
+    background: var(--text-primary);
+}
+
+/* ============================================
+   7. DIVINE CTA BUTTON
+   ============================================ */
+.btn-divine {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--pearl-white);
+    background: transparent;
+    border: 2px solid var(--pearl-white);
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-silk);
+}
+
+.btn-divine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left var(--transition-velvet);
+}
+
+.btn-divine:hover {
+    background: var(--pearl-white);
+    color: var(--navy-deep);
+    border-color: var(--pearl-white);
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.btn-divine:hover::before {
+    left: 100%;
+}
+
+.btn-divine-primary {
+    background: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--pearl-white-pure);
+}
+
+.btn-divine-primary:hover {
+    background: var(--primary-green-dark);
+    border-color: var(--primary-green-dark);
+    color: var(--pearl-white-pure);
+}
+
+/* Floating CTA Beacon */
+.cta-beacon {
+    position: fixed;
+    bottom: var(--space-lg);
+    right: var(--space-lg);
+    z-index: 999;
+    animation: breathe-glow var(--breathe-duration) ease-in-out infinite,
+        float-gentle 6s ease-in-out infinite;
+}
+
+.cta-beacon .btn-divine {
+    padding: 1.25rem 2rem;
+    background: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--pearl-white);
+    box-shadow: 0 10px 40px rgba(56, 161, 105, 0.3);
+}
+
+.cta-beacon .btn-divine:hover {
+    background: var(--primary-green-dark);
+    border-color: var(--primary-green-dark);
+}
+
+/* Hero variants for different pages */
+.hero-sanctuary.about-hero-sanctuary {
+    background: url('../images/Services.jpeg') center/cover no-repeat;
+}
+
+.hero-sanctuary.pharmacy-hero {
+    background: url('../images/Pharmacy.jpeg') center/cover no-repeat;
+}
+
+/* Text visibility helper for sections outside hero */
+.text-sage {
+    color: var(--primary-green) !important;
+}
+
+.bg-pearl .lead-text,
+.bg-pearl p {
+    color: var(--text-secondary);
+}
+
+.bg-pearl h2,
+.bg-pearl h3 {
+    color: var(--text-primary);
+}
+
+/* ============================================
+   8. SCROLL-TRIGGERED TEXT REVEAL
+   ============================================ */
+.reveal-text {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.reveal-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-fade {
+    opacity: 0;
+    transition: opacity 1.2s ease-out;
+}
+
+.reveal-fade.visible {
+    opacity: 1;
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.reveal-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.stagger-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.stagger-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.stagger-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.stagger-delay-4 {
+    transition-delay: 0.4s;
+}
+
+.stagger-delay-5 {
+    transition-delay: 0.5s;
+}
+
+/* ============================================
+   9. THE JOURNEY - HORIZONTAL PARALLAX TIMELINE
+   ============================================ */
+.journey-section {
+    padding: var(--space-xxl) 0;
+    background: var(--gradient-sanctuary);
+    position: relative;
+    overflow: hidden;
+}
+
+.journey-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.journey-header h2 {
+    margin-bottom: var(--space-md);
+}
+
+.journey-timeline {
+    position: relative;
+    padding: var(--space-xl) 0;
+}
+
+/* Timeline Line */
+.journey-timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--sage-muted) 10%,
+            var(--sage-muted) 90%,
+            transparent);
+    transform: translateY(-50%);
+}
+
+.journey-stops {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    position: relative;
+    z-index: 2;
+}
+
+.journey-stop {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+    padding: var(--space-lg);
+    background: var(--pearl-white-pure);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(107, 143, 104, 0.08);
+    transition: all var(--transition-velvet);
+    position: relative;
+    animation: breathe var(--breathe-duration) ease-in-out infinite;
+}
+
+.journey-stop::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--pearl-white-pure);
+    border: 2px solid var(--liquid-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(201, 169, 98, 0.2);
+    animation: breathe-glow var(--breathe-duration) ease-in-out infinite;
+}
+
+.journey-stop:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 80px rgba(107, 143, 104, 0.15);
+}
+
+.journey-number {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--liquid-gold);
+    line-height: 1;
+    margin-bottom: var(--space-sm);
+}
+
+.journey-stop h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.journey-stop p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+/* ============================================
+   10. SERVICES - VERTICAL NARRATIVE FLOW
+   ============================================ */
+.services-narrative {
+    position: relative;
+}
+
+.service-narrative-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+    padding: var(--space-xxl) 0;
+    border-bottom: 1px solid rgba(139, 168, 136, 0.1);
+}
+
+.service-narrative-item:nth-child(even) {
+    direction: rtl;
+}
+
+.service-narrative-item:nth-child(even)>* {
+    direction: ltr;
+}
+
+.service-content {
+    padding: var(--space-lg);
+}
+
+.service-number {
+    font-family: var(--font-serif);
+    font-size: 6rem;
+    font-weight: 300;
+    color: rgba(139, 168, 136, 0.15);
+    line-height: 1;
+    margin-bottom: var(--space-sm);
+}
+
+.service-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+}
+
+.service-content p {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: var(--text-secondary);
+}
+
+.service-visual {
+    position: relative;
+    padding: var(--space-lg);
+}
+
+.service-icon-large {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: var(--gradient-healing);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 30px 60px rgba(139, 168, 136, 0.15);
+    transition: all var(--transition-velvet);
+    animation: breathe var(--breathe-duration) ease-in-out infinite;
+}
+
+.service-icon-large svg {
+    width: 80px;
+    height: 80px;
+    color: var(--soft-sage);
+}
+
+.service-narrative-item:hover .service-icon-large {
+    transform: scale(1.05);
+    box-shadow: 0 40px 80px rgba(139, 168, 136, 0.2);
+}
+
+/* ============================================
+   11. THE SANCTUM - IMMERSIVE GALLERY
+   ============================================ */
+.sanctum-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sanctum-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.sanctum-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.sanctum-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg,
+            rgba(250, 249, 247, 0.95) 0%,
+            rgba(250, 249, 247, 0.7) 30%,
+            rgba(250, 249, 247, 0.7) 70%,
+            rgba(250, 249, 247, 0.95) 100%);
+    z-index: 2;
+}
+
+.sanctum-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 800px;
+    padding: var(--space-xl);
+}
+
+.sanctum-content h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--space-lg);
+}
+
+/* ============================================
+   12. PHILOSOPHY SECTION
+   ============================================ */
+.philosophy-section {
+    background: var(--mist);
+    padding: var(--space-xxl) 0;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.philosophy-card {
+    text-align: center;
+    padding: var(--space-xl);
+    background: var(--pearl-white-pure);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(107, 143, 104, 0.06);
+    transition: all var(--transition-velvet);
+    animation: breathe var(--breathe-duration) ease-in-out infinite;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 80px rgba(107, 143, 104, 0.12);
+}
+
+.philosophy-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto var(--space-lg);
+    background: var(--gradient-healing);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: breathe-glow var(--breathe-duration) ease-in-out infinite;
+}
+
+.philosophy-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--soft-sage);
+}
+
+.philosophy-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--space-sm);
+}
+
+.philosophy-card p {
+    color: var(--text-secondary);
+    margin: 0 auto;
+}
+
+/* ============================================
+   13. MEDICAL AIDS - ELEGANT MARQUEE
+   ============================================ */
+.partners-section {
+    padding: var(--space-xl) 0;
+    background: var(--pearl-white-pure);
+    border-top: 1px solid rgba(139, 168, 136, 0.1);
+    border-bottom: 1px solid rgba(139, 168, 136, 0.1);
+}
+
+.partners-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.partners-header h4 {
+    color: var(--text-whisper);
+    font-size: 0.75rem;
+}
+
+.partners-marquee {
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.partners-track {
+    display: flex;
+    gap: var(--space-xl);
+    animation: marquee 40s linear infinite;
+}
+
+.partner-item {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    white-space: nowrap;
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--mist);
+    border-radius: 50px;
+    transition: all var(--transition-silk);
+}
+
+.partner-item:hover {
+    color: var(--soft-sage);
+    background: rgba(139, 168, 136, 0.1);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - var(--space-xl) / 2));
+    }
+}
+
+/* ============================================
+   14. SANCTUARY FOOTER
+   ============================================ */
+.footer-sanctuary {
+    background: var(--text-primary);
+    color: var(--pearl-white);
+    padding: var(--space-xxl) 0 var(--space-lg);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.footer-brand h3 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--pearl-white);
+    margin-bottom: var(--space-md);
+}
+
+.footer-brand h3 span {
+    color: var(--soft-sage);
+}
+
+.footer-brand p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    max-width: 350px;
+}
+
+.footer-col h4 {
+    color: var(--pearl-white);
+    font-size: 0.75rem;
+    margin-bottom: var(--space-md);
+    letter-spacing: 0.15em;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: var(--space-xs);
+}
+
+.footer-col a {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    transition: color var(--transition-silk);
+}
+
+.footer-col a:hover {
+    color: var(--liquid-gold);
+}
+
+.footer-col p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: var(--space-xs);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(139, 168, 136, 0.2);
+}
+
+.footer-bottom p {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* ============================================
+   15. CONSULTATION MODAL
+   ============================================ */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(45, 58, 46, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-velvet);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-sanctuary {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: var(--pearl-white-pure);
+    border-radius: 30px;
+    padding: var(--space-xl);
+    max-width: 600px;
+    width: 90%;
+    z-index: 2001;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-velvet);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay.active+.modal-sanctuary,
+.modal-sanctuary.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--mist);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-silk);
+}
+
+.modal-close:hover {
+    background: var(--whisper-gray);
+}
+
+.modal-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.modal-header h3 {
+    font-size: 2rem;
+    margin-bottom: var(--space-xs);
+}
+
+.modal-header p {
+    color: var(--text-secondary);
+}
+
+/* Form Styles */
+.form-sanctuary .form-group {
+    margin-bottom: var(--space-md);
+}
+
+.form-sanctuary label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-xs);
+}
+
+.form-sanctuary input,
+.form-sanctuary select,
+.form-sanctuary textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--text-primary);
+    background: var(--mist);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: all var(--transition-silk);
+}
+
+.form-sanctuary input:focus,
+.form-sanctuary select:focus,
+.form-sanctuary textarea:focus {
+    outline: none;
+    border-color: var(--soft-sage);
+    background: var(--pearl-white-pure);
+    box-shadow: 0 0 0 4px rgba(139, 168, 136, 0.1);
+}
+
+.form-sanctuary textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+}
+
+/* ============================================
+   16. CURSOR GLOW TRAIL
+   ============================================ */
+.cursor-glow {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+            rgba(201, 169, 98, 0.08) 0%,
+            transparent 70%);
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cursor-glow.active {
+    opacity: 1;
+}
+
+/* ============================================
+   17. PAGE TRANSITIONS - VELVET WIPE
+   ============================================ */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--soft-sage);
+    z-index: 3000;
+    transform: translateX(-100%);
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.page-transition.active {
+    transform: translateX(0);
+}
+
+.page-transition.exit {
+    transform: translateX(100%);
+}
+
+/* ============================================
+   18. CONTACT SECTION
+   ============================================ */
+.contact-sanctuary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+}
+
+.contact-info-card {
+    background: var(--pearl-white-pure);
+    border-radius: 20px;
+    padding: var(--space-xl);
+    box-shadow: 0 20px 60px rgba(107, 143, 104, 0.08);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid rgba(139, 168, 136, 0.1);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-healing);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--soft-sage);
+}
+
+.contact-item h4 {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--text-whisper);
+    margin-bottom: 4px;
+}
+
+.contact-item p,
+.contact-item a {
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.contact-map {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(107, 143, 104, 0.08);
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+/* ============================================
+   19. ABOUT PAGE SPECIFIC
+   ============================================ */
+.about-hero-sanctuary {
+    background: linear-gradient(180deg, var(--mist) 0%, var(--pearl-white) 100%);
+}
+
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+.about-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(107, 143, 104, 0.15);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   20. RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1200px) {
+    .journey-stops {
+        gap: var(--space-md);
+    }
+
+    .journey-stop {
+        min-width: 250px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --space-xxl: 8rem;
+    }
+
+    .nav-sanctuary {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--pearl-white);
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--space-lg);
+        transform: translateX(100%);
+        transition: transform var(--transition-velvet);
+    }
+
+    .nav-sanctuary.active {
+        transform: translateX(0);
+    }
+
+    .nav-toggle-sanctuary {
+        display: flex;
+    }
+
+    .service-narrative-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .service-narrative-item:nth-child(even) {
+        direction: ltr;
+    }
+
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-sanctuary {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand p {
+        margin: 0 auto var(--space-md);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: 70px;
+        --space-xxl: 6rem;
+        --space-xl: 4rem;
+        --space-lg: 2rem;
+    }
+
+    .hero-headline {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .journey-stops {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .journey-stop {
+        max-width: 100%;
+    }
+
+    .journey-timeline::before {
+        display: none;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-beacon {
+        bottom: var(--space-md);
+        right: var(--space-md);
+    }
+
+    .cta-beacon .btn-divine {
+        padding: 1rem 1.5rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --space-xxl: 4rem;
+        --space-xl: 3rem;
+    }
+
+    .hero-content-sanctuary {
+        padding: var(--space-lg);
+    }
+
+    .btn-divine {
+        padding: 0.875rem 2rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* ============================================
+   21. UTILITY CLASSES
+   ============================================ */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-whisper {
+    color: var(--text-whisper);
+}
+
+.text-sage {
+    color: var(--soft-sage);
+}
+
+.text-gold {
+    color: var(--liquid-gold);
+}
+
+.bg-pearl {
+    background: var(--pearl-white);
+}
+
+.bg-mist {
+    background: var(--mist);
+}
+
+.bg-primary {
+    background: var(--text-primary);
+}
+
+.mb-sm {
+    margin-bottom: var(--space-sm);
+}
+
+.mb-md {
+    margin-bottom: var(--space-md);
+}
+
+.mb-lg {
+    margin-bottom: var(--space-lg);
+}
+
+.mb-xl {
+    margin-bottom: var(--space-xl);
+}
+
+.mt-sm {
+    margin-top: var(--space-sm);
+}
+
+.mt-md {
+    margin-top: var(--space-md);
+}
+
+.mt-lg {
+    margin-top: var(--space-lg);
+}
+
+.mt-xl {
+    margin-top: var(--space-xl);
+}
+
+.pt-xl {
+    padding-top: var(--space-xl);
+}
+
+.pb-xl {
+    padding-bottom: var(--space-xl);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Print Styles */
+@media print {
+
+    .header-sanctuary,
+    .cta-beacon,
+    .cursor-glow,
+    .page-transition {
+        display: none;
+    }
+
+    .hero-sanctuary {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+}

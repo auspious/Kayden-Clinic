@@ -5,133 +5,278 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Kayden Clinic</title>
+    <title>Our Services | Kayden Clinic - The Sanctuary of Healing</title>
     <meta name="description"
-        content="Explore the comprehensive medical services offered at Kayden Clinic, from general consultations to specialized care.">
+        content="Explore the comprehensive medical services at Kayden Clinic - from general consultations to advanced diagnostics, chronic care management, and specialized treatments.">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Favicon (placeholder) -->
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Sanctuary CSS -->
+    <link rel="stylesheet" href="css/sanctuary.css">
+
+    <!-- Favicon -->
     <link rel="icon" href="images/icon-shield-plus.svg" type="image/svg+xml">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container navbar">
-            <a href="index.html" class="logo">Kayden<span>Clinic</span></a>
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="pharmacy.html" class="nav-link">Pharmacy</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="appointments.html" class="btn btn-secondary">Book Appointment</a></li>
-                </ul>
+    <!-- Ethereal Header -->
+    <header class="header-sanctuary">
+        <div class="header-inner">
+            <a href="index.html" class="logo-sanctuary">Kayden<span>Clinic</span></a>
+            <nav class="nav-sanctuary">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="pharmacy.html" class="nav-link">Pharmacy</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="appointments.html" class="btn-divine btn-divine-primary">Request Consultation</a>
             </nav>
-            <div class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </div>
+            <button class="nav-toggle-sanctuary" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <main>
-        <!-- Page Header -->
-        <section class="hero">
-            <div class="container hero-content fade-in">
-                <h1 class="hero-slogan animate-slide-up" style="font-size: 2.8rem;">Comprehensive Healthcare Services
+        <!-- Hero Section -->
+        <section class="hero-sanctuary" style="min-height: 60vh;">
+            <div class="organic-texture"></div>
+            <div class="light-rays">
+                <div class="light-ray"></div>
+                <div class="light-ray"></div>
+            </div>
+            <div class="hero-content-sanctuary">
+                <p class="hero-tagline">Comprehensive Care</p>
+                <h1 class="hero-headline">
+                    Our <em>Services</em>
                 </h1>
-                <p class="hero-subtext animate-fade-scale">World-class medical care tailored for Zimbabwe's diverse
-                    healthcare needs, from preventive care to specialized treatments.</p>
+                <p class="hero-subheadline">
+                    World-class medical care tailored for Zimbabwe's diverse healthcare needs,
+                    from preventive care to specialized treatments.
+                </p>
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section class="section">
-            <div class="container">
-                <div class="services-grid">
+        <!-- The Healing Journey - Services Timeline -->
+        <section class="journey-section">
+            <div class="sanctuary-container">
+                <div class="journey-header reveal-text">
+                    <p class="hero-tagline text-sage">Your Path to Wellness</p>
+                    <h2>The Healing Journey</h2>
+                    <p class="lead-text content-narrow">
+                        From your first consultation to complete restoration, we guide you through
+                        every step with precision and compassion.
+                    </p>
+                </div>
+
+                <div class="journey-timeline">
+                    <div class="journey-stops">
+                        <div class="journey-stop">
+                            <div class="journey-number">01</div>
+                            <h3>Consultation</h3>
+                            <p>Your story begins with listening. Our specialists take time to understand your complete
+                                health history.</p>
+                        </div>
+                        <div class="journey-stop">
+                            <div class="journey-number">02</div>
+                            <h3>Diagnosis</h3>
+                            <p>State-of-the-art diagnostics reveal the complete picture with precision and accuracy.</p>
+                        </div>
+                        <div class="journey-stop">
+                            <div class="journey-number">03</div>
+                            <h3>Treatment</h3>
+                            <p>Personalized care plans combining evidence-based medicine with compassionate care.</p>
+                        </div>
+                        <div class="journey-stop">
+                            <div class="journey-number">04</div>
+                            <h3>Restoration</h3>
+                            <p>Ongoing support ensures lasting wellness and your return to vibrant health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Primary Services - Narrative Flow -->
+        <section class="section-sanctuary bg-pearl">
+            <div class="sanctuary-container">
+                <div class="text-center mb-xl reveal-text">
+                    <p class="hero-tagline text-sage">Primary Care</p>
+                    <h2>Essential Services</h2>
+                </div>
+
+                <div class="services-narrative">
                     <!-- Service 1: Doctor Consultation -->
-                    <div class="service-card fade-in">
-                        <div class="service-card-icon">
-                            <svg viewBox="0 0 64 64" fill="currentColor">
-                                <path
-                                    d="M20 12c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 9c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z" />
-                                <path
-                                    d="M44 12c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 9c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z" />
-                                <path
-                                    d="M32 28c-8.8 0-16 7.2-16 16v8h4v-8c0-6.6 5.4-12 12-12s12 5.4 12 12v8h4v-8c0-8.8-7.2-16-16-16z" />
-                                <path d="M20 26l4-4 8 8 8-8 4 4-12 12z" />
-                            </svg>
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">01</div>
+                            <h3>Doctor Consultation</h3>
+                            <p>Comprehensive primary healthcare by qualified Zimbabwean doctors trained locally and
+                                internationally. We believe in treating the whole person—taking time to understand your
+                                complete health picture before developing a personalized care plan.</p>
+                            <ul style="margin-top: 1.5rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">• Complete physical examinations</li>
+                                <li style="margin-bottom: 0.5rem;">• Health risk assessments</li>
+                                <li style="margin-bottom: 0.5rem;">• Preventive care guidance</li>
+                                <li>• Specialist referrals when needed</li>
+                            </ul>
                         </div>
-                        <h3>Doctor Consultation</h3>
-                        <p>Comprehensive primary healthcare by qualified Zimbabwean doctors, ensuring accurate diagnosis
-                            and effective treatment plans.</p>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <path
+                                        d="M20 12c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 9c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z" />
+                                    <path
+                                        d="M44 12c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 9c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z" />
+                                    <path
+                                        d="M32 28c-8.8 0-16 7.2-16 16v8h4v-8c0-6.6 5.4-12 12-12s12 5.4 12 12v8h4v-8c0-8.8-7.2-16-16-16z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
+
                     <!-- Service 2: Chronic Disease Management -->
-                    <div class="service-card fade-in" style="transition-delay: 0.1s;">
-                        <div class="service-card-icon">
-                            <svg viewBox="0 0 64 64" fill="currentColor">
-                                <path
-                                    d="M32 58C32 58 8 36.8 8 18.5C8 10.5 14.5 4 22.5 4C26.5 4 30.2 5.8 32 8.8C33.8 5.8 37.5 4 41.5 4C49.5 4 56 10.5 56 18.5C56 36.8 32 58 32 58Z"
-                                    fill="currentColor" opacity="0.2" />
-                                <path
-                                    d="M32 54C32 54 10 34.6 10 18.5C10 11.6 15.6 6 22.5 6C26.1 6 29.4 7.6 31 10.3C32.6 7.6 35.9 6 39.5 6C46.4 6 52 11.6 52 18.5C52 34.6 30 54 30 54"
-                                    stroke="currentColor" stroke-width="2.5" fill="none" />
-                                <polyline points="16 28 22 18 28 32 36 12 42 22 48 22" stroke="currentColor"
-                                    stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">02</div>
+                            <h3>Chronic Disease Management</h3>
+                            <p>Specialized ongoing care for long-term health conditions. We partner with you for the
+                                entire journey, providing consistent monitoring, medication management, and adaptive
+                                treatment plans.</p>
+                            <ul style="margin-top: 1.5rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">• Diabetes management & monitoring</li>
+                                <li style="margin-bottom: 0.5rem;">• Hypertension control programs</li>
+                                <li style="margin-bottom: 0.5rem;">• Cardiovascular care</li>
+                                <li>• Asthma & respiratory conditions</li>
+                            </ul>
                         </div>
-                        <h3>Chronic Disease Management</h3>
-                        <p>Specialized ongoing care for conditions such as diabetes, hypertension, and asthma with
-                            regular monitoring and support.</p>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <path
+                                        d="M32 58C32 58 8 36.8 8 18.5C8 10.5 14.5 4 22.5 4C26.5 4 30.2 5.8 32 8.8C33.8 5.8 37.5 4 41.5 4C49.5 4 56 10.5 56 18.5C56 36.8 32 58 32 58Z"
+                                        fill="currentColor" opacity="0.2" />
+                                    <polyline points="16 28 22 18 28 32 36 12 42 22 48 22" stroke="currentColor"
+                                        stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
+
                     <!-- Service 3: Medical Examination -->
-                    <div class="service-card fade-in" style="transition-delay: 0.2s;">
-                        <div class="service-card-icon">
-                            <svg viewBox="0 0 64 64" fill="currentColor">
-                                <rect x="14" y="8" width="36" height="48" rx="2" fill="none" stroke="currentColor"
-                                    stroke-width="2.5" />
-                                <circle cx="32" cy="16" r="3" fill="currentColor" />
-                                <line x1="22" y1="26" x2="42" y2="26" stroke="currentColor" stroke-width="2.5"
-                                    stroke-linecap="round" />
-                                <line x1="22" y1="36" x2="42" y2="36" stroke="currentColor" stroke-width="2.5"
-                                    stroke-linecap="round" />
-                                <line x1="22" y1="46" x2="34" y2="46" stroke="currentColor" stroke-width="2.5"
-                                    stroke-linecap="round" />
-                                <path d="M38 42l4 4 8-8" stroke="currentColor" stroke-width="2.5" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">03</div>
+                            <h3>Medical Examination</h3>
+                            <p>Full body checkups and certified medical examinations for employment, insurance, travel,
+                                or personal health assurance. Our thorough assessments provide complete peace of mind.
+                            </p>
+                            <ul style="margin-top: 1.5rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">• Pre-employment medicals</li>
+                                <li style="margin-bottom: 0.5rem;">• Insurance examinations</li>
+                                <li style="margin-bottom: 0.5rem;">• Travel health certificates</li>
+                                <li>• Executive health screenings</li>
+                            </ul>
                         </div>
-                        <h3>Medical Examination</h3>
-                        <p>Full body checkups and certified medical examinations for employment, insurance, or travel
-                            requirements.</p>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <rect x="14" y="8" width="36" height="48" rx="2" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" />
+                                    <circle cx="32" cy="16" r="3" fill="currentColor" />
+                                    <line x1="22" y1="26" x2="42" y2="26" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" />
+                                    <line x1="22" y1="36" x2="42" y2="36" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" />
+                                    <path d="M38 42l4 4 8-8" stroke="currentColor" stroke-width="2.5" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Service 4: Baby Scaling -->
-                    <div class="service-card fade-in" style="transition-delay: 0.3s;">
-                        <div class="service-card-icon">
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Diagnostics Section with Image -->
+        <section class="section-sanctuary">
+            <div class="sanctuary-container">
+                <div class="about-content-grid reveal-text">
+                    <div>
+                        <p class="hero-tagline text-sage mb-md">Precision Medicine</p>
+                        <h2 style="margin-bottom: 2rem;">Advanced Diagnostics</h2>
+                        <p class="lead-text" style="margin-bottom: 2rem;">
+                            State-of-the-art imaging and laboratory services form the foundation for
+                            accurate diagnosis and effective treatment.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 2; margin-bottom: 2rem;">
+                            Our modern diagnostic facilities include digital X-ray technology, CT scanning,
+                            ultrasound imaging, electrocardiography (ECG), and a comprehensive laboratory
+                            for bloodwork and testing.
+                        </p>
+                        <ul style="color: var(--text-secondary); margin-bottom: 2rem;">
+                            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--liquid-gold);">✓</span> Digital X-Ray Imaging
+                            </li>
+                            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--liquid-gold);">✓</span> CT Scans & MRI
+                            </li>
+                            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--liquid-gold);">✓</span> Ultrasound Examinations
+                            </li>
+                            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+                                <span style="color: var(--liquid-gold);">✓</span> Comprehensive Lab Testing
+                            </li>
+                        </ul>
+                        <a href="appointments.html" class="btn-divine btn-divine-primary">Book Diagnostic
+                            Appointment</a>
+                    </div>
+                    <div class="about-image reveal-scale">
+                        <img src="images/xRay.jpeg" alt="Advanced X-Ray diagnostic equipment at Kayden Clinic"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Services -->
+        <section class="philosophy-section">
+            <div class="sanctuary-container">
+                <div class="text-center mb-xl reveal-text">
+                    <p class="hero-tagline text-sage">Specialized Care</p>
+                    <h2>Additional Services</h2>
+                    <p class="lead-text content-narrow">
+                        Comprehensive care for the whole family, from the youngest to the wisest.
+                    </p>
+                </div>
+
+                <div class="philosophy-grid">
+                    <div class="philosophy-card reveal-scale stagger-delay-1">
+                        <div class="philosophy-icon">
                             <svg viewBox="0 0 64 64" fill="currentColor">
                                 <ellipse cx="32" cy="42" rx="14" ry="18" fill="currentColor" opacity="0.2" />
                                 <circle cx="32" cy="20" r="10" fill="currentColor" />
                                 <path d="M32 32c-8 0-14 4-14 12 0 4 4 8 14 8s14-4 14-8c0-8-6-12-14-12z" />
                                 <circle cx="26" cy="18" r="2" fill="#fff" />
-                                <path d="M30 24c0 1.1.9 2 2 2s2-.9 2-2" fill="#fff" />
                             </svg>
                         </div>
-                        <h3>Baby Scaling</h3>
-                        <p>Pediatric growth monitoring and developmental checks to ensure your child is growing healthy
-                            and strong.</p>
+                        <h3>Baby Scaling & Pediatrics</h3>
+                        <p>Pediatric growth monitoring, developmental checks, and comprehensive child healthcare.
+                            Ensuring your little ones grow healthy and strong.</p>
                     </div>
-                    <!-- Service 5: Family Planning -->
-                    <div class="service-card fade-in" style="transition-delay: 0.4s;">
-                        <div class="service-card-icon">
+
+                    <div class="philosophy-card reveal-scale stagger-delay-2">
+                        <div class="philosophy-icon">
                             <svg viewBox="0 0 64 64" fill="currentColor">
                                 <circle cx="24" cy="20" r="6" fill="currentColor" opacity="0.8" />
                                 <circle cx="40" cy="20" r="6" fill="currentColor" opacity="0.6" />
@@ -140,129 +285,148 @@
                                 <path d="M40 28c-6 0-10 4-10 10v4h20v-4c0-6-4-10-10-10z" fill="currentColor"
                                     opacity="0.6" />
                                 <circle cx="32" cy="38" r="4" fill="currentColor" />
-                                <path d="M32 44c-4 0-6 2-6 5v1h12v-1c0-3-2-5-6-5z" fill="currentColor" />
                             </svg>
                         </div>
                         <h3>Family Planning</h3>
                         <p>Confidential counseling and services for contraception and reproductive health planning for
                             individuals and couples.</p>
                     </div>
+
+                    <div class="philosophy-card reveal-scale stagger-delay-3">
+                        <div class="philosophy-icon">
+                            <svg viewBox="0 0 64 64" fill="currentColor">
+                                <rect x="20" y="12" width="24" height="40" rx="3" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" />
+                                <circle cx="32" cy="28" r="8" fill="currentColor" opacity="0.2" />
+                                <circle cx="28" cy="26" r="2.5" fill="currentColor" />
+                                <circle cx="36" cy="26" r="2.5" fill="currentColor" />
+                                <circle cx="32" cy="32" r="2.5" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3>Full-Service Pharmacy</h3>
+                        <p>Complete pharmaceutical services with prescription medications, health supplements, and
+                            expert consultation.</p>
+                        <a href="pharmacy.html" class="btn-divine mt-md"
+                            style="margin-top: 1rem; display: inline-block;">Visit Pharmacy</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Technology Section with X-Ray -->
-        <section class="section">
-            <div class="container">
-                <div class="about-content fade-in" style="display: flex; align-items: center; gap: 40px;">
-                    <div class="about-text" style="flex: 1;">
-                        <h2>Advanced Diagnostics</h2>
-                        <p>We utilize state-of-the-art digital X-ray technology to ensure precise, high-quality imaging
-                            for accurate diagnoses. Our modern facilities are equipped to handle a wide range of
-                            diagnostic needs.</p>
-                    </div>
-                    <div class="about-image" style="flex: 1;">
-                        <img src="images/xRay.jpeg" alt="Digital X-Ray Machine"
-                            style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%; height: auto;">
-                    </div>
+        <!-- Medical Aids Partners -->
+        <section class="partners-section">
+            <div class="sanctuary-container">
+                <div class="partners-header reveal-fade">
+                    <h4>Accepted Medical Aid Partners</h4>
                 </div>
-            </div>
-        </section>
-
-        <!-- Medical AIDS Section -->
-        <section class="section medical-aids-section">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <h2>Medical Aid Accepted Here</h2>
-                    <p>We accept comprehensive coverage from leading medical aid societies</p>
-                </div>
-                <div class="marquee-container fade-in">
-                    <div class="marquee-content">
-                        <!-- Partner Logos (First Set) -->
-                        <div class="partner-logo">PSMAS</div>
-                        <div class="partner-logo">FBC Health</div>
-                        <div class="partner-logo">BudgetHealth</div>
-                        <div class="partner-logo">Emerald</div>
-                        <div class="partner-logo">Fidelity Life</div>
-                        <div class="partner-logo">Cellmed Health</div>
-                        <div class="partner-logo">Generations Health</div>
-                        <div class="partner-logo">MASCA</div>
-                        <div class="partner-logo">Maisha</div>
-                        <div class="partner-logo">CIMAS</div>
-                        <div class="partner-logo">Alliance Health</div>
-                        <div class="partner-logo">First Mutual</div>
-                        <div class="partner-logo">EMF</div>
-
-                        <!-- Duplicate Set for Seamless Scroll -->
-                        <div class="partner-logo">PSMAS</div>
-                        <div class="partner-logo">FBC Health</div>
-                        <div class="partner-logo">BudgetHealth</div>
-                        <div class="partner-logo">Emerald</div>
-                        <div class="partner-logo">Fidelity Life</div>
-                        <div class="partner-logo">Cellmed Health</div>
-                        <div class="partner-logo">Generations Health</div>
-                        <div class="partner-logo">MASCA</div>
-                        <div class="partner-logo">Maisha</div>
-                        <div class="partner-logo">CIMAS</div>
-                        <div class="partner-logo">Alliance Health</div>
-                        <div class="partner-logo">First Mutual</div>
-                        <div class="partner-logo">EMF</div>
+                <div class="partners-marquee">
+                    <div class="partners-track">
+                        <span class="partner-item">PSMAS</span>
+                        <span class="partner-item">FBC Health</span>
+                        <span class="partner-item">BudgetHealth</span>
+                        <span class="partner-item">Emerald</span>
+                        <span class="partner-item">Fidelity Life</span>
+                        <span class="partner-item">Cellmed Health</span>
+                        <span class="partner-item">Generations Health</span>
+                        <span class="partner-item">MASCA</span>
+                        <span class="partner-item">Maisha</span>
+                        <span class="partner-item">CIMAS</span>
+                        <span class="partner-item">Alliance Health</span>
+                        <span class="partner-item">First Mutual</span>
+                        <span class="partner-item">EMF</span>
+                        <!-- Duplicate for seamless scroll -->
+                        <span class="partner-item">PSMAS</span>
+                        <span class="partner-item">FBC Health</span>
+                        <span class="partner-item">BudgetHealth</span>
+                        <span class="partner-item">Emerald</span>
+                        <span class="partner-item">Fidelity Life</span>
+                        <span class="partner-item">Cellmed Health</span>
+                        <span class="partner-item">Generations Health</span>
+                        <span class="partner-item">MASCA</span>
+                        <span class="partner-item">Maisha</span>
+                        <span class="partner-item">CIMAS</span>
+                        <span class="partner-item">Alliance Health</span>
+                        <span class="partner-item">First Mutual</span>
+                        <span class="partner-item">EMF</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CTA Section -->
-        <section class="section" style="background-color: var(--secondary-color);">
-            <div class="container fade-in" style="text-align: center;">
-                <h2 style="color: var(--primary-color);">Ready to Experience Better Healthcare?</h2>
-                <p style="color: #adb5bd; max-width: 600px; margin: 0 auto 30px;">Our team is here to provide the care
-                    you deserve. Schedule your appointment today.</p>
-                <a href="appointments.html" class="btn btn-secondary">Book an Appointment</a>
+        <section class="sanctum-section" style="min-height: 60vh;">
+            <div class="sanctum-background">
+                <img src="images/Kayden.jpeg" alt="Kayden Clinic Facility" loading="lazy">
+            </div>
+            <div class="sanctum-overlay"></div>
+            <div class="sanctum-content reveal-scale">
+                <p class="hero-tagline text-sage">Your Health Awaits</p>
+                <h2>Ready to Experience Better Healthcare?</h2>
+                <p class="lead-text">
+                    Our team is here to provide the exceptional care you deserve.
+                    Schedule your consultation today.
+                </p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 3rem;">
+                    <a href="appointments.html" class="btn-divine btn-divine-primary">Book an Appointment</a>
+                    <a href="contact.html" class="btn-divine">Contact Us</a>
+                </div>
             </div>
         </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+    <!-- Floating CTA Beacon -->
+    <div class="cta-beacon">
+        <a href="appointments.html" class="btn-divine">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="margin-right: 8px;">
+                <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            Consult Now
+        </a>
+    </div>
+
+    <!-- Sanctuary Footer -->
+    <footer class="footer-sanctuary">
+        <div class="sanctuary-container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Kayden<span>Clinic</span></h4>
-                    <p>Your trusted partner in health, providing compassionate care with modern medicine.</p>
+                <div class="footer-brand">
+                    <h3>Kayden<span>Clinic</span></h3>
+                    <p>Your sanctuary for healing. We combine world-class medical expertise with genuine compassion,
+                        creating an experience where restoration meets reverence.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
+                    <h4>Navigation</h4>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="pharmacy.html">Pharmacy</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p>3A Mupani Road, Old Marimba Harare</p>
+                    <h4>Contact</h4>
+                    <p>3A Mupani Road, Old Marimba</p>
+                    <p>Harare, Zimbabwe</p>
                     <p><a href="tel:0242698663">(024) 2698663</a></p>
-                    <p><a href="https://wa.me/263712469830">+263 712 469 830</a> (WhatsApp)</p>
                     <p><a href="mailto:contact@kaydenclinic.com">contact@kaydenclinic.com</a></p>
                 </div>
                 <div class="footer-col">
-                    <h4>Working Hours</h4>
+                    <h4>Hours</h4>
                     <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
                     <p>Saturday: 8:00 AM - 6:00 PM</p>
-                    <p>Sunday: 9:00 AM - 1:00 PM (Emergency Only)</p>
-                    <p>Public Holidays: Emergency Services Available</p>
+                    <p>Sunday: 9:00 AM - 1:00 PM</p>
+                    <p style="color: var(--liquid-gold); margin-top: 0.5rem;">Emergency Services Available</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Kayden Clinic. All Rights Reserved.</p>
+                <p>&copy; 2025 Kayden Clinic. The Sanctuary of Healing. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <!-- Sanctuary JavaScript -->
+    <script src="js/sanctuary.js"></script>
 </body>
 
 </html>

@@ -3,94 +3,116 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Kayden Clinic | Our Mission, Vision, and Values</title>
+    <title>About Us | Kayden Clinic - The Sanctuary of Healing</title>
     <meta name="description"
-        content="Learn about Kayden Clinic's commitment to providing exceptional, patient-centered healthcare.">
+        content="Discover the mission, vision, and values of Kayden Clinic - Zimbabwe's premier medical sanctuary dedicated to exceptional patient-centered healthcare.">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Favicon (placeholder) -->
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Sanctuary CSS -->
+    <link rel="stylesheet" href="css/sanctuary.css">
+
+    <!-- Favicon -->
     <link rel="icon" href="images/icon-shield-plus.svg" type="image/svg+xml">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container navbar">
-            <a href="index.html" class="logo">Kayden<span>Clinic</span></a>
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-
-                    <li class="nav-item"><a href="pharmacy.html" class="nav-link">Pharmacy</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="appointments.html" class="btn btn-secondary">Book Appointment</a></li>
-                </ul>
+    <!-- Ethereal Header -->
+    <header class="header-sanctuary">
+        <div class="header-inner">
+            <a href="index.html" class="logo-sanctuary">Kayden<span>Clinic</span></a>
+            <nav class="nav-sanctuary">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="pharmacy.html" class="nav-link">Pharmacy</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="appointments.html" class="btn-divine btn-divine-primary">Request Consultation</a>
             </nav>
-            <div class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </div>
+            <button class="nav-toggle-sanctuary" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <main>
-        <!-- Page Header -->
-        <section class="hero about-hero">
-            <div class="container hero-content fade-in">
-                <h1 class="hero-slogan" style="font-size: 2.8rem;">About Kayden Clinic</h1>
-                <p class="hero-subtext">Dedicated to your health and well-being with unwavering commitment.</p>
+        <!-- Hero Section -->
+        <section class="hero-sanctuary about-hero-sanctuary" style="min-height: 60vh;">
+            <div class="organic-texture"></div>
+            <div class="light-rays">
+                <div class="light-ray"></div>
+                <div class="light-ray"></div>
+            </div>
+            <div class="hero-content-sanctuary">
+                <p class="hero-tagline">Our Story</p>
+                <h1 class="hero-headline">
+                    About <em>Kayden Clinic</em>
+                </h1>
+                <p class="hero-subheadline">
+                    Dedicated to your health and well-being with unwavering commitment to excellence.
+                </p>
             </div>
         </section>
 
         <!-- Mission & Vision Section -->
-        <section class="section">
-            <div class="container">
-                <div class="about-content fade-in">
-                    <div class="about-text">
-                        <h2 style="text-align: left;">Our Mission</h2>
-                        <p>To provide accessible, high-quality, and compassionate healthcare. We strive to be a pillar
+        <section class="section-sanctuary">
+            <div class="sanctuary-container">
+                <div class="about-content-grid reveal-text">
+                    <div>
+                        <p class="hero-tagline text-sage mb-md">Our Purpose</p>
+                        <h2 style="margin-bottom: 2rem;">Our Mission</h2>
+                        <p class="lead-text" style="margin-bottom: 3rem;">
+                            To provide accessible, high-quality, and compassionate healthcare. We strive to be a pillar
                             of health in our community, offering personalized care that respects the dignity and privacy
-                            of every patient. We are committed to fostering a healing environment where patients feel
-                            safe, valued, and understood.</p>
-                        <br>
-                        <h2 style="text-align: left;">Our Vision</h2>
-                        <p>To be the region's most trusted private healthcare facility, recognized for our clinical
+                            of every patient.
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 2; margin-bottom: 3rem;">
+                            We are committed to fostering a healing environment where patients feel safe, valued, and
+                            understood. Every interaction is an opportunity to demonstrate our dedication to excellence
+                            and genuine care.
+                        </p>
+
+                        <h3 style="margin-bottom: 1.5rem;">Our Vision</h3>
+                        <p style="color: var(--text-secondary); line-height: 2;">
+                            To be the region's most trusted private healthcare facility, recognized for our clinical
                             excellence, innovative spirit, and patient-centered approach. We aim to continuously evolve,
                             integrating the latest medical advancements to improve patient outcomes and enhance the
-                            overall healthcare experience.</p>
+                            overall healthcare experience.
+                        </p>
                     </div>
-                    <div class="about-image">
-                        <img src="./images/Vision.jpeg"
-                            alt="Modern clinic interior with comfortable seating and professional medical design"
-                            style="border-radius: 10px; box-shadow: 0 10px 30px var(--shadow-color); width: 100%; height: 100%; object-fit: cover;"
+                    <div class="about-image reveal-scale">
+                        <img src="images/Vision.jpeg" alt="Modern Kayden Clinic interior with comfortable seating"
                             loading="lazy">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Our Values Section -->
-        <section class="section" style="background-color: #f8f9fa;">
-            <div class="container">
-                <div class="section-title fade-in">
+        <!-- Core Values Section -->
+        <section class="philosophy-section">
+            <div class="sanctuary-container">
+                <div class="text-center mb-xl reveal-text">
+                    <p class="hero-tagline text-sage">Guiding Principles</p>
                     <h2>Our Core Values</h2>
-                    <p>The principles that guide every decision we make.</p>
+                    <p class="lead-text content-narrow">
+                        The principles that guide every decision we make and every interaction we have.
+                    </p>
                 </div>
-                <div class="services-grid">
-                    <!-- Value 1: Compassion -->
-                    <div class="service-card fade-in">
-                        <div class="service-card-icon">
+
+                <div class="philosophy-grid">
+                    <div class="philosophy-card reveal-scale stagger-delay-1">
+                        <div class="philosophy-icon">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -100,9 +122,9 @@
                         <p>We treat every patient with empathy, kindness, and respect, understanding their concerns and
                             providing comfort in their healing journey.</p>
                     </div>
-                    <!-- Value 2: Excellence -->
-                    <div class="service-card fade-in" style="transition-delay: 0.1s;">
-                        <div class="service-card-icon">
+
+                    <div class="philosophy-card reveal-scale stagger-delay-2">
+                        <div class="philosophy-icon">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -112,9 +134,9 @@
                         <p>We uphold the highest standards of medical practice and are dedicated to achieving the best
                             possible outcomes for every patient.</p>
                     </div>
-                    <!-- Value 3: Integrity -->
-                    <div class="service-card fade-in" style="transition-delay: 0.2s;">
-                        <div class="service-card-icon">
+
+                    <div class="philosophy-card reveal-scale stagger-delay-3">
+                        <div class="philosophy-icon">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
                             </svg>
@@ -127,46 +149,154 @@
             </div>
         </section>
 
+        <!-- The Sanctuary Experience -->
+        <section class="section-sanctuary bg-pearl">
+            <div class="sanctuary-container">
+                <div class="text-center mb-xl reveal-text">
+                    <p class="hero-tagline text-sage">Our Approach</p>
+                    <h2>The Sanctuary Experience</h2>
+                </div>
+
+                <div class="services-narrative">
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">01</div>
+                            <h3>Patient-Centered Care</h3>
+                            <p>At Kayden Clinic, you are never just a number. We take the time to listen, understand,
+                                and develop treatment plans tailored specifically to your unique needs and
+                                circumstances. Your health journey is personal, and so is our care.</p>
+                        </div>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <circle cx="32" cy="20" r="12" fill="currentColor" opacity="0.3" />
+                                    <path d="M32 36c-12 0-20 6-20 14v4h40v-4c0-8-8-14-20-14z" fill="currentColor"
+                                        opacity="0.3" />
+                                    <circle cx="32" cy="32" r="4" fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">02</div>
+                            <h3>Continuous Innovation</h3>
+                            <p>We stay at the forefront of medical advancements, continuously updating our equipment,
+                                techniques, and knowledge. Our commitment to learning ensures you receive the most
+                                current and effective treatments available.</p>
+                        </div>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2"
+                                        opacity="0.3" />
+                                    <circle cx="32" cy="32" r="12" fill="none" stroke="currentColor" stroke-width="2"
+                                        opacity="0.5" />
+                                    <circle cx="32" cy="32" r="4" fill="currentColor" />
+                                    <path d="M32 8v8M32 48v8M8 32h8M48 32h8" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">03</div>
+                            <h3>Community Commitment</h3>
+                            <p>As a Zimbabwean institution, we are deeply rooted in our community. We understand the
+                                unique healthcare challenges faced by our people and are committed to making quality
+                                healthcare accessible to all who seek it.</p>
+                        </div>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <circle cx="20" cy="24" r="8" fill="currentColor" opacity="0.3" />
+                                    <circle cx="44" cy="24" r="8" fill="currentColor" opacity="0.3" />
+                                    <circle cx="32" cy="40" r="8" fill="currentColor" opacity="0.5" />
+                                    <path d="M20 32v8c0 4 4 8 12 8s12-4 12-8v-8" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="sanctum-section" style="min-height: 60vh;">
+            <div class="sanctum-background">
+                <img src="images/Services.jpeg" alt="Kayden Clinic Services" loading="lazy">
+            </div>
+            <div class="sanctum-overlay"></div>
+            <div class="sanctum-content reveal-scale">
+                <p class="hero-tagline text-sage">Join Our Family</p>
+                <h2>Experience the Difference</h2>
+                <p class="lead-text">
+                    Discover why thousands of Zimbabweans trust Kayden Clinic for their healthcare needs.
+                </p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 3rem;">
+                    <a href="appointments.html" class="btn-divine btn-divine-primary">Request Consultation</a>
+                    <a href="contact.html" class="btn-divine">Contact Us</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+    <!-- Floating CTA Beacon -->
+    <div class="cta-beacon">
+        <a href="appointments.html" class="btn-divine">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="margin-right: 8px;">
+                <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            Consult Now
+        </a>
+    </div>
+
+    <!-- Sanctuary Footer -->
+    <footer class="footer-sanctuary">
+        <div class="sanctuary-container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Kayden<span>Clinic</span></h4>
-                    <p>Your trusted partner in health, providing compassionate care with modern medicine.</p>
+                <div class="footer-brand">
+                    <h3>Kayden<span>Clinic</span></h3>
+                    <p>Your sanctuary for healing. We combine world-class medical expertise with genuine compassion,
+                        creating an experience where restoration meets reverence.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
+                    <h4>Navigation</h4>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="pharmacy.html">Pharmacy</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p>3A Mupani Road, Old Marimba Harare</p>
+                    <h4>Contact</h4>
+                    <p>3A Mupani Road, Old Marimba</p>
+                    <p>Harare, Zimbabwe</p>
                     <p><a href="tel:0242698663">(024) 2698663</a></p>
-                    <p><a href="https://wa.me/263712469830">+263 712 469 830</a> (WhatsApp)</p>
                     <p><a href="mailto:contact@kaydenclinic.com">contact@kaydenclinic.com</a></p>
                 </div>
                 <div class="footer-col">
-                    <h4>Working Hours</h4>
-                    <p>Mon - Fri: 8:00 AM - 7:00 PM</p>
-                    <p>Saturday: 9:00 AM - 5:00 PM</p>
-                    <p>Sunday: Closed</p>
+                    <h4>Hours</h4>
+                    <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
+                    <p>Saturday: 8:00 AM - 6:00 PM</p>
+                    <p>Sunday: 9:00 AM - 1:00 PM</p>
+                    <p style="color: var(--liquid-gold); margin-top: 0.5rem;">Emergency Services Available</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Kayden Clinic. All Rights Reserved.</p>
+                <p>&copy; 2025 Kayden Clinic. The Sanctuary of Healing. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <!-- Sanctuary JavaScript -->
+    <script src="js/sanctuary.js"></script>
 </body>
 
 </html>

@@ -5,63 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacy Services | Kayden Clinic - Zimbabwe</title>
+    <title>Pharmacy Services | Kayden Clinic - The Sanctuary of Healing</title>
     <meta name="description"
-        content="Full-service pharmacy at Kayden Clinic Zimbabwe. Prescription medications, health supplements, medical supplies, and pharmaceutical consultation services.">
+        content="Full-service pharmacy at Kayden Clinic Zimbabwe. Prescription medications, health supplements, medical supplies, and expert pharmaceutical consultation.">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Sanctuary CSS -->
+    <link rel="stylesheet" href="css/sanctuary.css">
+
+    <!-- Favicon -->
     <link rel="icon" href="images/icon-shield-plus.svg" type="image/svg+xml">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container navbar">
-            <a href="index.html" class="logo">Kayden<span>Clinic</span></a>
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-
-                    <li class="nav-item"><a href="pharmacy.html" class="nav-link active">Pharmacy</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="appointments.html" class="btn btn-secondary">Book Appointment</a></li>
-                </ul>
+    <!-- Ethereal Header -->
+    <header class="header-sanctuary">
+        <div class="header-inner">
+            <a href="index.html" class="logo-sanctuary">Kayden<span>Clinic</span></a>
+            <nav class="nav-sanctuary">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="pharmacy.html" class="nav-link active">Pharmacy</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="appointments.html" class="btn-divine btn-divine-primary">Request Consultation</a>
             </nav>
-            <div class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </div>
+            <button class="nav-toggle-sanctuary" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <main>
-        <section class="hero pharmacy-hero">
-            <div class="container hero-content fade-in">
-                <h1 class="hero-slogan">Complete Pharmaceutical Care</h1>
-                <p class="hero-subtext">Zimbabwe's most trusted pharmacy with international-standard medications and
-                    expert pharmaceutical consultation.</p>
-                <div class="hero-cta-buttons">
-                    <a href="#pharmacy-services" class="btn btn-primary">View Services</a>
-                    <a href="tel:0242698663" class="btn btn-outline">Call Pharmacy</a>
+        <!-- Hero Section -->
+        <section class="hero-sanctuary" style="min-height: 60vh;">
+            <div class="organic-texture"></div>
+            <div class="light-rays">
+                <div class="light-ray"></div>
+                <div class="light-ray"></div>
+            </div>
+            <div class="hero-content-sanctuary">
+                <p class="hero-tagline">Complete Pharmaceutical Care</p>
+                <h1 class="hero-headline">
+                    Our <em>Pharmacy</em>
+                </h1>
+                <p class="hero-subheadline">
+                    Zimbabwe's most trusted pharmacy with international-standard medications
+                    and expert pharmaceutical guidance.
+                </p>
+                <div
+                    style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; opacity: 0; animation: revealUp 1s ease-out 0.9s forwards;">
+                    <a href="#pharmacy-services" class="btn-divine btn-divine-primary">View Services</a>
+                    <a href="tel:0242698663" class="btn-divine">Call Pharmacy</a>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="pharmacy-services">
-            <div class="container">
-                <div class="section-title fade-in">
-                    <h2>Pharmacy Services</h2>
-                    <p>Comprehensive pharmaceutical care for all your health needs</p>
+        <!-- Pharmacy Services Section -->
+        <section class="philosophy-section" id="pharmacy-services">
+            <div class="sanctuary-container">
+                <div class="text-center mb-xl reveal-text">
+                    <p class="hero-tagline text-sage">Our Services</p>
+                    <h2>Pharmaceutical Excellence</h2>
+                    <p class="lead-text content-narrow">
+                        Comprehensive pharmaceutical care for all your health needs,
+                        delivered with expertise and compassion.
+                    </p>
                 </div>
-                <div class="pharmacy-grid">
-                    <div class="pharmacy-card fade-in">
-                        <div class="pharmacy-icon prescription-icon">
+
+                <div class="philosophy-grid">
+                    <div class="philosophy-card reveal-scale stagger-delay-1">
+                        <div class="philosophy-icon">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M4 2v20l8-4 8 4V2H4zm14 17l-6-3-6 3V4h12v15z" />
                                 <path d="M8 6h8v2H8zm0 3h8v2H8zm0 3h5v2H8z" />
@@ -69,10 +94,11 @@
                         </div>
                         <h3>Prescription Medications</h3>
                         <p>Licensed dispensing of prescription drugs with proper consultation and guidance from
-                            qualified pharmacists.</p>
+                            qualified, registered pharmacists.</p>
                     </div>
-                    <div class="pharmacy-card fade-in" style="transition-delay: 0.1s;">
-                        <div class="pharmacy-icon otc-icon">
+
+                    <div class="philosophy-card reveal-scale stagger-delay-2">
+                        <div class="philosophy-icon">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M19 8h-2v3h-3v2h3v3h2v-3h3v-2h-3V8zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z" />
@@ -80,10 +106,11 @@
                         </div>
                         <h3>Over-the-Counter Medicines</h3>
                         <p>Wide range of OTC medications, vitamins, supplements, and health products for everyday
-                            wellness.</p>
+                            wellness and preventive care.</p>
                     </div>
-                    <div class="pharmacy-card fade-in" style="transition-delay: 0.2s;">
-                        <div class="pharmacy-icon consultation-icon">
+
+                    <div class="philosophy-card reveal-scale stagger-delay-3">
+                        <div class="philosophy-icon">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -91,133 +118,249 @@
                         </div>
                         <h3>Pharmaceutical Consultation</h3>
                         <p>Expert advice on medication management, drug interactions, and proper usage from certified
-                            pharmacists.</p>
-                    </div>
-                    <div class="pharmacy-card fade-in" style="transition-delay: 0.3s;">
-                        <div class="pharmacy-icon medical-supplies-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M9.5 12c2.49 0 4.5-2.01 4.5-4.5S11.99 3 9.5 3 5 5.01 5 7.5 7.01 12 9.5 12zm0-7C10.88 5 12 6.12 12 7.5S10.88 10 9.5 10 7 8.88 7 7.5 8.12 5 9.5 5zm7.5 7c1.93 0 3.5-1.57 3.5-3.5S18.93 5 17 5s-3.5 1.57-3.5 3.5 1.57 3.5 3.5 3.5zm0-5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5z" />
-                            </svg>
-                        </div>
-                        <h3>Medical Supplies</h3>
-                        <p>Complete range of medical equipment, diabetic supplies, wound care products, and mobility
-                            aids.</p>
+                            pharmacy professionals.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section medication-categories" style="background-color: #f8f9fa;">
-            <div class="container">
-                <div class="section-title fade-in">
+        <!-- Available Medications - Narrative Flow -->
+        <section class="section-sanctuary bg-pearl">
+            <div class="sanctuary-container">
+                <div class="text-center mb-xl reveal-text">
+                    <p class="hero-tagline text-sage">Our Stock</p>
                     <h2>Available Medications</h2>
-                    <p>Comprehensive stock of essential medications for Zimbabwe's healthcare needs</p>
+                    <p class="lead-text content-narrow">
+                        Comprehensive stock of essential medications meeting Zimbabwe's diverse healthcare needs.
+                    </p>
                 </div>
-                <div class="medication-grid">
-                    <div class="medication-card fade-in">
-                        <h4>Chronic Disease Management</h4>
-                        <ul>
-                            <li>Diabetes medications (Metformin, Insulin)</li>
-                            <li>Hypertension drugs (ACE inhibitors, Beta-blockers)</li>
-                            <li>Cardiovascular medications</li>
-                            <li>Asthma & respiratory treatments</li>
-                        </ul>
+
+                <div class="services-narrative">
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">01</div>
+                            <h3>Chronic Disease Management</h3>
+                            <p>Complete range of medications for long-term health conditions, ensuring consistent
+                                availability and quality.</p>
+                            <ul style="margin-top: 1.5rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">• Diabetes medications (Metformin, Insulin)</li>
+                                <li style="margin-bottom: 0.5rem;">• Hypertension drugs (ACE inhibitors, Beta-blockers)
+                                </li>
+                                <li style="margin-bottom: 0.5rem;">• Cardiovascular medications</li>
+                                <li>• Asthma & respiratory treatments</li>
+                            </ul>
+                        </div>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <path
+                                        d="M32 58C32 58 8 36.8 8 18.5C8 10.5 14.5 4 22.5 4C26.5 4 30.2 5.8 32 8.8C33.8 5.8 37.5 4 41.5 4C49.5 4 56 10.5 56 18.5C56 36.8 32 58 32 58Z"
+                                        fill="currentColor" opacity="0.2" />
+                                    <polyline points="16 28 22 18 28 32 36 12 42 22 48 22" stroke="currentColor"
+                                        stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="medication-card fade-in" style="transition-delay: 0.1s;">
-                        <h4>Infectious Disease Treatment</h4>
-                        <ul>
-                            <li>Antibiotics (Amoxicillin, Ciprofloxacin)</li>
-                            <li>Antimalarial drugs (Artemether-Lumefantrine)</li>
-                            <li>Antiviral medications</li>
-                            <li>Antifungal treatments</li>
-                        </ul>
+
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">02</div>
+                            <h3>Infectious Disease Treatment</h3>
+                            <p>Antibiotics, antimalarials, and antiviral medications to combat various infectious
+                                conditions effectively.</p>
+                            <ul style="margin-top: 1.5rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">• Antibiotics (Amoxicillin, Ciprofloxacin)</li>
+                                <li style="margin-bottom: 0.5rem;">• Antimalarial drugs (Artemether-Lumefantrine)</li>
+                                <li style="margin-bottom: 0.5rem;">• Antiviral medications</li>
+                                <li>• Antifungal treatments</li>
+                            </ul>
+                        </div>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2"
+                                        opacity="0.3" />
+                                    <circle cx="32" cy="32" r="12" fill="none" stroke="currentColor" stroke-width="2"
+                                        opacity="0.5" />
+                                    <circle cx="32" cy="32" r="4" fill="currentColor" />
+                                    <path d="M32 8v8M32 48v8M8 32h8M48 32h8" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="medication-card fade-in" style="transition-delay: 0.2s;">
-                        <h4>Pain & Inflammation</h4>
-                        <ul>
-                            <li>NSAIDs (Ibuprofen, Diclofenac)</li>
-                            <li>Paracetamol formulations</li>
-                            <li>Topical pain relievers</li>
-                            <li>Muscle relaxants</li>
-                        </ul>
+
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">03</div>
+                            <h3>Pain & Inflammation</h3>
+                            <p>Safe and effective pain management solutions for acute and chronic conditions.</p>
+                            <ul style="margin-top: 1.5rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">• NSAIDs (Ibuprofen, Diclofenac)</li>
+                                <li style="margin-bottom: 0.5rem;">• Paracetamol formulations</li>
+                                <li style="margin-bottom: 0.5rem;">• Topical pain relievers</li>
+                                <li>• Muscle relaxants</li>
+                            </ul>
+                        </div>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <rect x="20" y="12" width="24" height="40" rx="3" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" />
+                                    <circle cx="32" cy="28" r="8" fill="currentColor" opacity="0.2" />
+                                    <circle cx="28" cy="26" r="2.5" fill="currentColor" />
+                                    <circle cx="36" cy="26" r="2.5" fill="currentColor" />
+                                    <circle cx="32" cy="32" r="2.5" fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="medication-card fade-in" style="transition-delay: 0.3s;">
-                        <h4>Maternal & Child Health</h4>
-                        <ul>
-                            <li>Prenatal vitamins & supplements</li>
-                            <li>Pediatric formulations</li>
-                            <li>Oral rehydration salts</li>
-                            <li>Family planning products</li>
-                        </ul>
+
+                    <div class="service-narrative-item reveal-text">
+                        <div class="service-content">
+                            <div class="service-number">04</div>
+                            <h3>Maternal & Child Health</h3>
+                            <p>Specialized products for mothers and children, supporting healthy development at every
+                                stage.</p>
+                            <ul style="margin-top: 1.5rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">• Prenatal vitamins & supplements</li>
+                                <li style="margin-bottom: 0.5rem;">• Pediatric formulations</li>
+                                <li style="margin-bottom: 0.5rem;">• Oral rehydration salts</li>
+                                <li>• Family planning products</li>
+                            </ul>
+                        </div>
+                        <div class="service-visual">
+                            <div class="service-icon-large">
+                                <svg viewBox="0 0 64 64" fill="currentColor">
+                                    <ellipse cx="32" cy="42" rx="14" ry="18" fill="currentColor" opacity="0.2" />
+                                    <circle cx="32" cy="20" r="10" fill="currentColor" />
+                                    <path d="M32 32c-8 0-14 4-14 12 0 4 4 8 14 8s14-4 14-8c0-8-6-12-14-12z" />
+                                    <circle cx="26" cy="18" r="2" fill="#fff" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section pharmacy-features">
-            <div class="container">
-                <div class="features-content fade-in">
-                    <div class="features-text">
-                        <h2>Why Choose Our Pharmacy?</h2>
-                        <div class="feature-item">
-                            <div class="feature-icon quality-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
-                                </svg>
+        <!-- Why Choose Our Pharmacy -->
+        <section class="section-sanctuary">
+            <div class="sanctuary-container">
+                <div class="about-content-grid reveal-text">
+                    <div>
+                        <p class="hero-tagline text-sage mb-md">The Difference</p>
+                        <h2 style="margin-bottom: 2rem;">Why Choose Our Pharmacy?</h2>
+
+                        <div style="margin-bottom: 2rem;">
+                            <div
+                                style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; background: var(--mist); border-radius: 15px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: var(--gradient-healing); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        style="color: var(--soft-sage);">
+                                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">
+                                        Quality Assured Medications</h4>
+                                    <p style="color: var(--text-secondary); margin: 0;">All medications sourced from
+                                        licensed suppliers and stored under optimal conditions following international
+                                        standards.</p>
+                                </div>
                             </div>
-                            <div>
-                                <h4>Quality Assured Medications</h4>
-                                <p>All medications sourced from licensed suppliers and stored under optimal conditions
-                                    following international standards.</p>
+
+                            <div
+                                style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; background: var(--mist); border-radius: 15px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: var(--gradient-healing); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        style="color: var(--soft-sage);">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">
+                                        Qualified Pharmacists</h4>
+                                    <p style="color: var(--text-secondary); margin: 0;">Our team includes pharmacists
+                                        registered with the Pharmacy Council of Zimbabwe, ensuring professional service.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex; align-items: flex-start; gap: 1.5rem; padding: 1.5rem; background: var(--mist); border-radius: 15px;">
+                                <div
+                                    style="width: 50px; height: 50px; background: var(--gradient-healing); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        style="color: var(--soft-sage);">
+                                        <path
+                                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">
+                                        Extended Hours</h4>
+                                    <p style="color: var(--text-secondary); margin: 0;">Open 7 days a week with
+                                        emergency medication services available for urgent healthcare needs.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon pharmacist-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Qualified Pharmacists</h4>
-                                <p>Our team includes pharmacists registered with the Pharmacy Council of Zimbabwe,
-                                    ensuring professional service.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon availability-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Extended Hours</h4>
-                                <p>Open 7 days a week with emergency medication services available for urgent healthcare
-                                    needs.</p>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="btn btn-primary">Contact Pharmacy</a>
+
+                        <a href="contact.html" class="btn-divine btn-divine-primary">Contact Pharmacy</a>
                     </div>
-                    <div class="features-image">
-                        <img src="images/pharmacy1.jpeg" alt="Modern pharmacy interior"
-                            style="border-radius: 15px; box-shadow: 0 15px 40px var(--shadow-color);">
+                    <div class="about-image reveal-scale">
+                        <img src="images/pharmacy1.jpeg" alt="Modern pharmacy interior at Kayden Clinic" loading="lazy">
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="sanctum-section" style="min-height: 50vh;">
+            <div class="sanctum-background">
+                <img src="images/Pharmacy.jpeg" alt="Kayden Clinic Pharmacy" loading="lazy">
+            </div>
+            <div class="sanctum-overlay"></div>
+            <div class="sanctum-content reveal-scale">
+                <p class="hero-tagline text-sage">Your Health Partner</p>
+                <h2>Need Medication Advice?</h2>
+                <p class="lead-text">
+                    Our expert pharmacists are here to help with all your medication questions.
+                </p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 3rem;">
+                    <a href="tel:0242698663" class="btn-divine btn-divine-primary">Call Pharmacy</a>
+                    <a href="https://wa.me/263712469830" target="_blank" class="btn-divine">WhatsApp Us</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
+    <!-- Floating CTA Beacon -->
+    <div class="cta-beacon">
+        <a href="appointments.html" class="btn-divine">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="margin-right: 8px;">
+                <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            Consult Now
+        </a>
+    </div>
+
+    <!-- Sanctuary Footer -->
+    <footer class="footer-sanctuary">
+        <div class="sanctuary-container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Kayden<span>Clinic</span></h4>
-                    <p>Your trusted partner in health, providing compassionate care with modern medicine.</p>
+                <div class="footer-brand">
+                    <h3>Kayden<span>Clinic</span></h3>
+                    <p>Your sanctuary for healing. We combine world-class medical expertise with genuine compassion,
+                        creating an experience where restoration meets reverence.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
+                    <h4>Navigation</h4>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
@@ -226,10 +369,10 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p>3A Mupani Road, Old Marimba Harare</p>
+                    <h4>Contact</h4>
+                    <p>3A Mupani Road, Old Marimba</p>
+                    <p>Harare, Zimbabwe</p>
                     <p><a href="tel:0242698663">(024) 2698663</a></p>
-                    <p><a href="https://wa.me/263712469830">+263 712 469 830</a> (WhatsApp)</p>
                     <p><a href="mailto:contact@kaydenclinic.com">contact@kaydenclinic.com</a></p>
                 </div>
                 <div class="footer-col">
@@ -237,16 +380,17 @@
                     <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
                     <p>Saturday: 8:00 AM - 6:00 PM</p>
                     <p>Sunday: 9:00 AM - 1:00 PM</p>
-                    <p>Emergency: 24/7 On-Call</p>
+                    <p style="color: var(--liquid-gold); margin-top: 0.5rem;">Emergency: 24/7 On-Call</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Kayden Clinic. All Rights Reserved.</p>
+                <p>&copy; 2025 Kayden Clinic. The Sanctuary of Healing. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Sanctuary JavaScript -->
+    <script src="js/sanctuary.js"></script>
 </body>
 
 </html>
